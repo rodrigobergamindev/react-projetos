@@ -20,6 +20,7 @@ function App() {
         <Aleatorio min={10} max={100}/>
         <Aleatorio min={10} max={100}/>
         <Aleatorio min={10} max={100}/>
+        <Aleatorio min={10} max={100}/>
       </Card>
     </div>
     </div>
