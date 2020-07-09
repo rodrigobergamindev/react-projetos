@@ -1,0 +1,13 @@
+.app .cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h4 {
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.card {
+    background-color: #222;
+    border: 3px solid;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.card .content{
+    flex: 1;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 0.9rem;
+    padding: 5px;
+    text-align: center;
+}
+
