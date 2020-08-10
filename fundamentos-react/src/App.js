@@ -37,6 +37,9 @@ function App() {
       <Card titulo="#4 - Lista de Alunos" color={"#ff6b81"}>
           <ListaDeAlunos></ListaDeAlunos>
       </Card>
+
+      <Card titulo="#5 - Lista de Produtos" color={"#ff6b81"}>
+      </Card>
     </div>
     </div>
   );
