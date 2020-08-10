@@ -10,8 +10,7 @@ export default function Card(props) {
     return (
         <div className={css.card} style={style}>
             <div className={css.title}>
-                <h1>{props.titulo}</h1>
-                <h4>Geração de números aleatórios</h4>
+                <h4>{props.titulo}</h4>
             </div>
             <div className={css.content}>
                 {props.children}
