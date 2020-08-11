@@ -1,4 +1,6 @@
 /*AJUSTAR SOMBRA DO AVATAR*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
 
 .nav {
     list-style-type: none;
@@ -11,6 +13,7 @@
     margin: 40px;
     color: #f5f6fa;
     margin-top: 10px;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .perfil {
@@ -21,8 +24,9 @@
 }
 
 .perfil:hover{
-    box-shadow:0 0 15px #636e72, 0 0 5px #636e72;
+    box-shadow:0 0 15px #dfe6e9, 0 0 15px #dfe6e9;
     transition: 1s;
+    transform: scale(1.5,1.5);
 }
 
 .icon {
