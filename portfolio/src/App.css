@@ -1,0 +1,34 @@
+.header {
+  grid-area: header;
+  background-image: linear-gradient(#ee9ca7, #ffdde1);
+  height: 40em;
+}
+
+.content-portfolio {
+  grid-area: content;
+}
+
+.about {
+  grid-area: about;
+}
+
+.contato {
+  grid-area: contato;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+		"header header"
+		"content content"
+		"about about"
+		"contato contato"
+		"footer footer"
+		;
+}
