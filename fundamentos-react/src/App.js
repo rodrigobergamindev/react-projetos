@@ -6,6 +6,10 @@ import css from './app.module.css'
 import Familia from './components/Familia';
 import FamiliaMembro from './components/FamiliaMembro';
 import ListaDeAlunos from './components/ListaDeAlunos';
+import ListaDeProdutos from './components/ListaDeProdutos';
+import ParOuImpar from './components/ParOuImpar';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 
 function App() {
@@ -38,12 +42,25 @@ function App() {
           <ListaDeAlunos></ListaDeAlunos>
       </Card>
 
-      <Card titulo="#5 - Lista de Produtos" color={"#ff6b81"}>
+      <Card titulo="#5 - Lista de Produtos" color={"#C39BD3"}>
+        <ListaDeProdutos></ListaDeProdutos>
+      </Card>
+
+      <Card titulo="#6 - Renderização Condicional" color={"#ffa502"}>
+        <ParOuImpar numero={2}></ParOuImpar>
+      </Card>
+
+      <Card titulo="#7 - Comunicação Direta" color={"#ffa502"}>
+        <DiretaPai></DiretaPai>
+      </Card>
+
+      <Card titulo="#8 - Comunicação Indireta" color={"#ffa502"}>
+        <IndiretaPai></IndiretaPai>
       </Card>
     </div>
     </div>
   );
 }
-/**EXERCÍCIO - CRIAR UMA TABELA DE PRODUTOS, CONTENDO ID, PREÇO E NOME */
+
 
 export default App;

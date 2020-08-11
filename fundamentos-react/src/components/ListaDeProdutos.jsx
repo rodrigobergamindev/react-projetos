@@ -5,7 +5,7 @@ import produtos from '../data/produtos'
 export default function ListaDeProdutos() {
     return (
         <div>
-            <table class="table">
+            <table className="table">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -16,11 +16,11 @@ export default function ListaDeProdutos() {
   <tbody>
       {
           produtos.map((produto, index) => {
-            <tr key={index}>
+            return <tr key={index}>
             <th scope="row">{index}</th>
             <td>{produto.nome}</td>
             <td>{produto.preco}</td>
-          </tr>
+            </tr>
           })
       }
   </tbody>
