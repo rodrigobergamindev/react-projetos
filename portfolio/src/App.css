@@ -1,7 +1,7 @@
 .header {
   grid-area: header;
-  background-image: linear-gradient(#ee9ca7, #ffdde1);
-  height: 40em;
+  background-image: linear-gradient(#ee9ca7, #f7797d);
+  height: 42em;
 }
 
 .content-portfolio {

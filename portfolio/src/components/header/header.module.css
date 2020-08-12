@@ -1,45 +1,109 @@
 /*AJUSTAR SOMBRA DO AVATAR*/
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+}
 
 .nav {
+    margin-top: 1.1em;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .itemMenu {
-    margin: 40px;
+    margin: 0.5em;
     color: #f5f6fa;
-    margin-top: 10px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.socialIcon {
+    margin: 0.5em;
+    color: #f5f6fa;
+    font-size: 2.0em;
+    transition: 1s;
+    transform: scale(1.0,1.0);
+}
+
+.socialIcon:hover {
+    transition: 0.5s;
+    transform: scale(1.4,1.4);
 }
 
 .perfil {
-   width: 15em;
-   height: 15em;
-   border-radius: 10em;
-   border: 0.22em solid #f0f0f0;
-}
-
-.perfil:hover{
-    box-shadow:0 0 15px #dfe6e9, 0 0 15px #dfe6e9;
+    width: 15em;
+    border-radius: 10em;
+    border: 1.3em solid #f5f6fa;
     transition: 1s;
-    transform: scale(1.5,1.5);
-}
+    transform: scale(1.0,1.0);
+ }
+ 
+ .perfil:hover{
+     transition: 1s;
+     transform: scale(1.2,1.2);
+     box-shadow:0 0 15px #dfe6e9, 0 0 15px #dfe6e9;
+ }
 
 .icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.0em;
 }
 
-.avatar{
-    margin-top: 2.5em;
+.avatar {
+    margin-top: 4em;
+    margin-bottom: 1.2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
+
+.title {
+    font-size: 2.5em;
+    margin-top: 1.2em;
+    margin-bottom: 0.20em;
+    color: #f5f6fa;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #f5f6fa;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+h2,h1,h3,h4,h5 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
 
 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
+
+.bar {
+    width: 50px;
+    background-color: #f5f6fa;
+    height: 3.5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/**/
