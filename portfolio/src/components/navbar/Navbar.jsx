@@ -11,6 +11,7 @@ export default function Navbar() {
                     <li className={css.itemMenu}><a href={"#portfolio"}>PORTFOLIO</a></li>
                     <li className={css.itemMenu}><a href={"#servicos"}>SERVIÇOS</a></li>
                     <li className={css.itemMenu}><a href={"#sobre"}>SOBRE</a></li>
+
                 </ul>
         </div>
     )

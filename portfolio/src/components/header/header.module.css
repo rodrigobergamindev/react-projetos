@@ -24,7 +24,8 @@ ul {
     font-weight: 700;
     padding: 0.3em;
     border-radius: 0.6em;
-    margin: 0.3em;
+    margin-right: 1.0em;
+    box-sizing: border-box;
 }
 
 .itemMenu:hover{
