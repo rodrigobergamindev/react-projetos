@@ -1,12 +1,13 @@
 import React from 'react'
 import css from '../header/header.module.css'
-import avatar from '../../images/avatar.png'
+import avatar from '../../images/avatar.jpg'
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebook,
     faInstagram,
-    faPinterest
+    faPinterest,
+    faWhatsapp
   } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -15,13 +16,6 @@ export default function Header() {
     
     return (
         <div className={css.menu}>
-                <ul className={css.nav}>
-                <li className={css.itemMenu}><FontAwesomeIcon icon={faHome} /></li>
-                    <li className={css.itemMenu}><a href={"#portfolio"}>PORTFOLIO</a></li>
-                    <li className={css.itemMenu}><a href={"#servicos"}>SERVIÇOS</a></li>
-                    <li className={css.itemMenu}><a href={"#sobre"}>SOBRE</a></li>
-                    <li className={css.itemMenu}><a href={"#contato"}>CONTATO</a></li>
-                </ul>
             <div className={css.avatar}>
                 <img src={avatar} alt="avatar" className={css.perfil}/>
                 <h1 className={css.title}>Lídia Martins</h1>
@@ -30,11 +24,12 @@ export default function Header() {
 
             <div className={css.bar}></div>
 
-        <div className={css.socialMedia}>
+        <div>
         <ul className={css.nav}>
                     <li className={css.socialIcon}><a href={"https://www.facebook.com/limartinsmakeup"} target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
                     <li className={css.socialIcon}><a href={"https://br.pinterest.com/lidia8martins/make/"} target="_blank"><FontAwesomeIcon icon={faPinterest} /></a></li>
                     <li className={css.socialIcon}><a href={"https://www.instagram.com/lidia_martinns/"} target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                    <li className={css.socialIcon}><a href={"https://api.whatsapp.com/send?phone=551194004-2911&text=Gostaria%20de%20mais%20informações%20!"} target="_blank"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
         </ul>
         </div>
         

@@ -1,34 +1,47 @@
 .header {
   grid-area: header;
-  background-image: linear-gradient(#ee9ca7, #f7797d);
-  height: 42em;
+  height: 35em;
 }
 
 .content-portfolio {
   grid-area: content;
+  background-color: #f5f6fa;
 }
 
 .about {
   grid-area: about;
-}
-
-.contato {
-  grid-area: contato;
+  height: 1400px;
+  background-color: #f5f6fa;
 }
 
 .footer {
   grid-area: footer;
 }
 
+.servicos {
+  grid-area: servicos;
+  background-color: #f5f6fa;
+}
+
+
+.navbar {
+  grid-area: navbar;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  background-color:#ee9ca7;
+}
 
 .container {
   width: 100%;
   display: grid;
   grid-template-areas:
+    "navbar navbar"
 		"header header"
-		"content content"
+    "content content"
+    "servicos servicos"
 		"about about"
-		"contato contato"
 		"footer footer"
 		;
 }
+
