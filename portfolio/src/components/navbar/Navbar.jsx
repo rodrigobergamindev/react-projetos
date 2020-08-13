@@ -24,12 +24,13 @@ const Navigation = styled.ul`
     background-color:#ee9ca7;
     z-index: 1;
 
+    margin-top:0;
     padding: 0;
     text-indent: 0;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     @media only screen and (min-width: 1025px) {
         justify-content: center;
         font-size: 1.3em;
@@ -41,7 +42,8 @@ const Item = styled.li`
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     padding: 0.3em;
-    margin-right: 1.0em;
+    flex:1;
+    text-align:center;
     &:hover{
         background-color: #f5f6fa;
         color:#ee9ca7;
