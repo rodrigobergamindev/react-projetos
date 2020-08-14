@@ -9,12 +9,9 @@ import Servicos from './components/servicos/Servicos'
 import About from './components/about/About'
 
 
+/*ICONS*/
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
 
 
 
@@ -24,23 +21,20 @@ function App() {
 
   const menu = [
     {name:home, url:"/"},
-    {name:"PORTFOLIO", url:"/portfolio"},
-    {name:"SERVIÇOS", url:"/servicos"},
-    {name:"SOBRE", url:"/sobre"},
+    {name:"PORTFOLIO", url:"portfolio"},
+    {name:"SERVIÇOS", url:"servicos"},
+    {name:"SOBRE", url:"sobre"},
   ]
 
 
   return (
-      <Switch>
       <Container>
               <Navbar menu={menu}></Navbar>
               <Header></Header>
-                <Route exact path='/portfolio' component={Content}></Route>
-                <Route exact path='/servicos' component={Servicos}></Route>
-                <Route exact path='/sobre' component={About}></Route>
+               <Content/>
+               <Servicos/>
+               <About/>
       </Container>
-      </Switch>
-
   );
 }
 

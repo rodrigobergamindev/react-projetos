@@ -1,10 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  NavLink
-} from "react-router-dom";
-
-
+import {Link} from 'react-scroll'
+import {animateScroll as scroll} from 'react-scroll'
 
 export default function Navbar(props) {
     const nav = props.menu
@@ -13,7 +10,7 @@ export default function Navbar(props) {
             {
                nav.map((element, index) => {
                    return (
-                   <Item key={index}><NavLink to={element.url}>{element.name}</NavLink></Item> 
+                   <Item key={index}><Link to={element.url} smooth={true} duration={1000}>{element.name}</Link></Item> 
                    )
                }) 
             }

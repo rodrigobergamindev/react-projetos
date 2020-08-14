@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {animateScroll as scroll} from 'react-scroll'
 
 export default function About() {
     return (
-        <SecAbout>SOBRE</SecAbout>
+        <SecAbout>
+          <span onClick={() => scroll.scrollToTop()}>SOBRE</span>
+          </SecAbout>
     )
 }
 
