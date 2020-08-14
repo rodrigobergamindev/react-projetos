@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
-  BrowserRouter as Router,
   NavLink
 } from "react-router-dom";
 
@@ -10,7 +9,6 @@ import {
 export default function Navbar(props) {
     const nav = props.menu
     return (
-        <Router>
         <Navigation>
             {
                nav.map((element, index) => {
@@ -20,12 +18,10 @@ export default function Navbar(props) {
                }) 
             }
         </Navigation>
-        </Router>
     )
 }
 
 const Navigation = styled.ul`
-
     margin-bottom: 1.5em;
     grid-area: navbar;
     position: sticky;

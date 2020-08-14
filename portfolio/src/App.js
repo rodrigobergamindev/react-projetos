@@ -12,7 +12,6 @@ import About from './components/about/About'
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -36,9 +35,9 @@ function App() {
       <Container>
               <Navbar menu={menu}></Navbar>
               <Header></Header>
-              <Route path='/portfolio' component={Content}></Route>
-              <Route path='/servicos' component={Servicos}></Route>
-              <Route path='/sobre' component={About}></Route>
+                <Route exact path='/portfolio' component={Content}></Route>
+                <Route exact path='/servicos' component={Servicos}></Route>
+                <Route exact path='/sobre' component={About}></Route>
       </Container>
       </Switch>
 
