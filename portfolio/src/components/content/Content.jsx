@@ -1,16 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import Gallery from '../gallery/Gallery'
 
 
 export default function Content() {
     return (
         <SecContent id="portfolio">
-            <span>PORTFÓLIO</span>
+            <Gallery></Gallery>
         </SecContent>
     )
 }
 const SecContent = styled.div`
   grid-area: content;
-  height:35em;
-  background-color:white;
+  height:800px;
 `;
+
