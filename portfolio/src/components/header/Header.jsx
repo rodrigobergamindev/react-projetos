@@ -1,6 +1,7 @@
 import React from 'react'
 import avatar from '../../images/avatar.jpg'
 import styled from 'styled-components'
+import Navbar from '../navbar/Navbar'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebook,
@@ -8,6 +9,8 @@ import {
     faPinterest,
     faWhatsapp
   } from '@fortawesome/free-brands-svg-icons';
+
+
 
 
 
