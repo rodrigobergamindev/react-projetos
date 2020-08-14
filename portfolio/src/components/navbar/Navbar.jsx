@@ -17,7 +17,7 @@ export default function Navbar(props) {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={1500}>
+                            duration={1200}>
                                 {element.name}
                             </Link>
                        </Item> 
@@ -29,12 +29,11 @@ export default function Navbar(props) {
 }
 
 const Navigation = styled.ul`
-    margin-bottom: 1.5em;
     grid-area: navbar;
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* required */
-    background-color:#ee9ca7;
+    background-color:#e66767;
     z-index: 1;
 
     margin-top:0;
@@ -63,7 +62,7 @@ const Item = styled.li`
     border-radius:5px;
     &:hover{
         background: #f5f6fa;
-        color:#ee9ca7;
+        color:#e66767;
         transition: .5s ease;
         transform: scale(1.2, 1.2);
     }
