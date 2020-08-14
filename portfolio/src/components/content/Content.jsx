@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export default function Content() {
     return (
-        <SecContent>
+        <SecContent id="portfolio">
             <span>PORTFÓLIO</span>
         </SecContent>
     )

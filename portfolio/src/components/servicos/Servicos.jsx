@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export default function Servicos() {
     return (
-        <SecServicos>SERVIÇOS</SecServicos>
+        <SecServicos id="servicos">SERVIÇOS</SecServicos>
     )
 }
 

@@ -17,7 +17,7 @@ import {
 export default function Header() {
     
     return (
-        <SecHeader>
+        <SecHeader id="home">
         <Card>
             <Perfil src={avatar} alt="avatar"></Perfil>
             <Title>Lídia Martins</Title>

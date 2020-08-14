@@ -20,7 +20,7 @@ const home = <FontAwesomeIcon icon={faHome} />
 function App() {
 
   const menu = [
-    {name:home, url:"/"},
+    {name:home, url:"home"},
     {name:"PORTFOLIO", url:"portfolio"},
     {name:"SERVIÇOS", url:"servicos"},
     {name:"SOBRE", url:"sobre"},
