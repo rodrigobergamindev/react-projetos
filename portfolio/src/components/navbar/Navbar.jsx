@@ -16,7 +16,7 @@ export default function Navbar(props) {
                             to={`${element.url}`}
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={-100}
                             duration={1500}>
                                 {element.name}
                             </Link>
