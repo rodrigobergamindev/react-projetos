@@ -56,7 +56,7 @@ const Item = styled.li`
     font-weight: 700;
     padding: 0.5em;
     text-align:center;
-    margin-right: 2.5em;
+    margin-right: 1.5em;
     border-radius:5px;
     &:hover{
         background: #f5f6fa;
