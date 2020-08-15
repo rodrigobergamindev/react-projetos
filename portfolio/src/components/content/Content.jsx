@@ -9,12 +9,14 @@ import img1 from '../../images/1.jpg'
 import img2 from '../../images/3.jpg'
 import img3 from '../../images/5.jpg'
 import img4 from '../../images/7.jpg'
-import img5 from '../../images/10.jpg'
+import img5 from '../../images/22.jpg'
 import img6 from '../../images/12.jpg'
 import img7 from '../../images/13.jpg'
 import img8 from '../../images/14.jpg'
 import img9 from '../../images/15.jpg'
 import img10 from '../../images/16.jpg'
+import img12 from '../../images/23.jpg'
+import img13 from '../../images/24.jpg'
 
 const albumPortfolio = [
     {image: img1, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" },
@@ -26,6 +28,9 @@ const albumPortfolio = [
     {image: img8, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" },
     {image: img9, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" },
     {image: img10, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" },
+    {image: img5, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" },
+    {image: img12, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" },
+    {image: img13, title: "Artística", description: "Nessa make foi utilizado rimel, blush e outros produtos" }
 ]
 
 
@@ -78,8 +83,9 @@ const Title = styled.div`
 const Gallery = styled.div`
     display:flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content:space-evenly;
     flex-wrap:wrap;
     margin:2em;
+    max-width:80em;
     box-sizing: border-box;
 `
