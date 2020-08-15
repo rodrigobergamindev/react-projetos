@@ -20,9 +20,8 @@ export default function Header() {
         <Card>
             <Perfil src={avatar} alt="avatar"></Perfil>
             <Title>Lídia Martins</Title>
-            <Subtitle>MAKEUP ARTIST</Subtitle>
+            <Subtitle>MAKEUP ARTIST<hr/></Subtitle>
         </Card>
-        <Bar></Bar>
             <Navigation>
                     <SocialMediaItem><a href={"https://www.facebook.com/limartinsmakeup"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a></SocialMediaItem>
                     <SocialMediaItem><a href={"https://br.pinterest.com/lidia8martins/make/"} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPinterest} /></a></SocialMediaItem>
@@ -37,16 +36,15 @@ export default function Header() {
 /**STYLED COMPONENTS */
 
 const SecHeader = styled.div`
-    flex:1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     `;
 
 
 const Navigation = styled.ul`
-    margin: 1em;
+    margin: 0.5em;
     padding: 0;
     text-indent: 0;
     list-style-type: none;
@@ -59,6 +57,7 @@ const Navigation = styled.ul`
 
 const SocialMediaItem = styled.li`
         margin: 0.5em;
+        margin-top: 0.125em;
         color: #f5f6fa;
         font-size: 2.0em;
         transition: 1s;
@@ -72,34 +71,27 @@ const SocialMediaItem = styled.li`
 
 
 const Perfil = styled.img`
-    width: 13em;
-    border-radius: 10em;
+    max-width:13em;
     border: 1.3em solid #f5f6fa;
+    margin-left: 0.5em;
+    border-radius: 10em;
     transition: 1s;
     transform: scale(1.0,1.0);
-    margin-bottom: 0.8em;
-
     &:hover{
         transition: 1s;
         transform: scale(1.2,1.2);
         box-shadow:0 0 15px white, 0 0 15px white;
     }
+
 `;
 
 const Card = styled.div` 
     margin-top: 2.5em;
-    margin-bottom: 1.2em;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    justify-content:center;
+    font-family: 'Open Sans', sans-serif;
 `;
-
-const Bar = styled.div`
-    width: 50px;
-    background-color: #f5f6fa;
-    height: 3.5px;
-    `;
 
 const Title = styled.div`
     font-size: 2.5em;
@@ -107,12 +99,21 @@ const Title = styled.div`
     margin-bottom: 0.15em;
     color: #f5f6fa;
     font-weight: 700;
+    text-align:center;
 `;
 
 const Subtitle = styled(Title)`
+    text-align:center;
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 300;
     margin-top:0.5em;
-    margin-bottom:0;
+    font-family: 'Open Sans', sans-serif;
+
+    hr {
+        height:2px;
+        width:4em;
+        background-color:#f5f6fa;
+        border: 0;
+    }
 `;
 
