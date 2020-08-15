@@ -38,7 +38,7 @@ const albumPortfolio = [
 export default function Content() {
     return (
         <SecContent id="portfolio">
-            <Title><FontAwesomeIcon icon={faSuitcase} /> MAKES & JOBS</Title>
+            <Title><FontAwesomeIcon icon={faSuitcase} /> Portfólio</Title>
             <Gallery>
                 {albumPortfolio.map((item, index) => {
                     return (
@@ -69,14 +69,13 @@ const SecContent = styled.div`
 `;
 
 const Title = styled.div`
-    font-size: 1.2em;
+    font-size: 2em;
     text-align:center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #f8a5c2;
-
     @media screen and (max-width: 480px) {
-        margin-top:2.5em;
+        margin-top:1.5em;
     }
 `
 
