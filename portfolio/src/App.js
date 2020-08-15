@@ -39,15 +39,9 @@ function App() {
 }
 
 const Container = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-areas:
-  "navbar"
-  "header"
-  "content"
-  "servicos"
-  "about"
-  "footer"
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   ;
 `;
 

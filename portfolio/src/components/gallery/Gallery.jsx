@@ -4,7 +4,7 @@ import Card from '../card/Card'
 
 export default function Gallery() {
     return (
-        <myGallery>
+        <MyGallery>
             <Card/>
             <Card/>
             <Card/>
@@ -12,15 +12,26 @@ export default function Gallery() {
             <Card/>
             <Card/>
             <Card/>
-        </myGallery>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+        </MyGallery>
     )
 }
 
 
-const myGallery = styled.div`
+const MyGallery = styled.div`
     display: flex;
+    align-items:center;
     flex-wrap: wrap;
-    height:800px;
-    width:800px;
-    background-color:white;
+    justify-content:center;
+    background-color:#e66767;
+    padding:1em;
+    border-radius:2.2em;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    @media screen and (max-width: 480px) {
+        width:92.5%;
+    }
 `;

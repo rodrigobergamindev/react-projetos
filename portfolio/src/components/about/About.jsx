@@ -12,7 +12,7 @@ export default function About() {
 }
 
 const SecAbout = styled.div`
-  grid-area: about;
+  flex:1;
   height:35em;
   background-color:#1abc9c;
 `;

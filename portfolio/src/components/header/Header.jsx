@@ -37,7 +37,7 @@ export default function Header() {
 /**STYLED COMPONENTS */
 
 const SecHeader = styled.div`
-    grid-area: header;
+    flex:1;
     display: flex;
     flex-direction: column;
     align-items: center;

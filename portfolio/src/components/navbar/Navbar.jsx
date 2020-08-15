@@ -29,10 +29,10 @@ export default function Navbar(props) {
 }
 
 const Navigation = styled.ul`
-    grid-area: navbar;
+    flex:1;
     position: sticky;
     position: -webkit-sticky;
-    top: 0; /* required */
+    top: 0; 
     background-color:#e66767;
     z-index: 1;
 
@@ -45,10 +45,11 @@ const Navigation = styled.ul`
     padding: 1.0em;
     font-size: 1.0em;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 480px) {
         flex: 1;
         font-size: 1.0em;
         justify-content: space-around;
+        width:92.5%;
     }
 `;
 

@@ -10,7 +10,7 @@ export default function Servicos() {
 
 
 const SecServicos = styled.div`
-  grid-area: servicos;
-  height:35em;
+  height:90em;
+  flex:1;
   background-color:#95a5a6;
 `;
