@@ -63,8 +63,8 @@ const SecContent = styled.div`
 
     @media screen and (max-width: 480px) {
         padding:0;
-        border-top-right-radius:1.5rem;
-        border-top-left-radius:1.5rem;
+        border-top-right-radius:2rem;
+        border-top-left-radius:2rem;
     }
 `;
 

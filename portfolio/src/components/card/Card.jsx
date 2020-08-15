@@ -32,6 +32,11 @@ const FlipCardFront = styled.img`
     box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
 
     @media screen and (max-width: 350px) {
+        width: 13em;
+        height: 13em;
+    }
+
+    @media screen and (max-width: 300px) {
         width: 11em;
         height: 11em;
     }
@@ -70,6 +75,11 @@ const FlipCardBack = styled.div`
     }
 
     @media screen and (max-width: 350px) {
+        width: 13em;
+        height: 13em;
+    }
+
+    @media screen and (max-width: 300px) {
         width: 11em;
         height: 11em;
     }

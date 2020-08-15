@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { faBookmark, faRing, faBirthdayCake, faCalendar, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faBookmark, faRing, faBirthdayCake, faCalendar, faCamera } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Servicos() {
@@ -33,7 +33,7 @@ export default function Servicos() {
             </Job>
 
             <Job>
-              <h3><FontAwesomeIcon icon={faGraduationCap} /> CURSOS</h3>
+              <h3><FontAwesomeIcon icon={faCamera} /> ENSAIOS</h3>
               <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -82,7 +82,4 @@ font-family: 'Open Sans', sans-serif;
 font-weight: 700;
 color: #f5f6fa;
 
-@media screen and (max-width: 480px) {
-    margin-top:1.5em;
-}
 `
