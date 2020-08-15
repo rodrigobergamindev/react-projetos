@@ -28,14 +28,13 @@ export default function Navbar(props) {
     )
 }
 
-const Navigation = styled.ul`
+const Navigation = styled.div`
     flex:1;
     position: sticky;
     position: -webkit-sticky;
     top: 0; 
     background-color:#f8a5c2;
     z-index: 1;
-
     margin-top:0;
     text-indent: 0;
     list-style-type: none;
