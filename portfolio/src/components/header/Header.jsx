@@ -91,7 +91,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content:center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 `;
 
 const Title = styled.div`
@@ -107,8 +107,8 @@ const Subtitle = styled(Title)`
     text-align:center;
     font-size: 1.2em;
     font-weight: 300;
-    margin-top:0.5em;
-    font-family: 'Open Sans', sans-serif;
+    margin-top:0.1em;
+    font-family: 'Roboto', sans-serif;
 
     hr {
         height:2px;

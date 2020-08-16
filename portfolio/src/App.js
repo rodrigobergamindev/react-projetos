@@ -7,7 +7,7 @@ import Navbar from './components/navbar/Navbar';
 import Content from './components/content/Content'
 import Servicos from './components/servicos/Servicos'
 import About from './components/about/About'
-
+import Footer from './components/footer/Footer'
 
 /*ICONS*/
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -34,6 +34,7 @@ function App() {
                <Content/>
                <Servicos/>
                <About/>
+               <Footer/>
       </Container>
   );
 }

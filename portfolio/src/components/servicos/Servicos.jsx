@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Servicos() {
     return (
         <SecServicos id="servicos">
-          <Title><FontAwesomeIcon icon={faBookmark} /> Serviços</Title>
+          <Title><FontAwesomeIcon icon={faBookmark} /> O QUE EU FAÇO</Title>
           <Tab>
             <Job>
               <h3> <FontAwesomeIcon icon={faCalendar} /> EVENTOS</h3>

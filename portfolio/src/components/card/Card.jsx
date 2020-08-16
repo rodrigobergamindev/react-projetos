@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import ReactCardFlip from 'react-card-flip';
 import styled from 'styled-components'
 
@@ -12,7 +12,7 @@ export default function Card(props) {
         setIsFlipped(!isFlipped)
     }
     return (
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" infinite={true} containerStyle={{margin:`${0.8}em`}}>
+        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" infinite={true} containerStyle={{margin:`${0.3}em`}}>
           <FlipCardFront src={props.image} alt="portfolio" onClick={handleClick}>
             </FlipCardFront>
    
@@ -29,6 +29,7 @@ export default function Card(props) {
 const FlipCardFront = styled.img`
     width: 16em;
     height: 16em;
+    border-radius: 0.6em;
     box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
 
     @media screen and (max-width: 350px) {
@@ -48,6 +49,7 @@ const FlipCardBack = styled.div`
     justify-content:center;
     align-items:center;
     flex-direction: column;
+    border-radius: 0.6em;
 
     width: 16em;
     height: 16em;
