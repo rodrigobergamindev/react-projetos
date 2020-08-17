@@ -7,7 +7,7 @@ import avatar_about from '../../images/avatar_2.png'
 export default function About() {
     return (
         <SecAbout id="sobre">
-          <Title><FontAwesomeIcon icon={faIdCard} /> SOBRE MIM</Title>
+          <Title><FontAwesomeIcon icon={faIdCard} /> SOBRE</Title>
           <TabCard>
             <img src={avatar_about} alt="sobre mim"/>
             <Desc>

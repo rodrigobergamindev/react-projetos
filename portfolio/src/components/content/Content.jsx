@@ -38,7 +38,7 @@ const albumPortfolio = [
 export default function Content() {
     return (
         <SecContent id="portfolio">
-            <Title><FontAwesomeIcon icon={faSuitcase} /> MEU PORTFÓLIO</Title>
+            <Title><FontAwesomeIcon icon={faSuitcase} /> PORTFÓLIO</Title>
             <Gallery>
                 {albumPortfolio.map((item, index) => {
                     return (
