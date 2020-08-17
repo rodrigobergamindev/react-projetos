@@ -65,17 +65,20 @@ const TabCard = styled.div`
     transform: scale(1.08, 1.08);
   }
 
+
   @media screen and (max-width: 930px) {
     flex-direction:column;
     max-width: 20em;
     img {
       border-radius:10em;
-      max-width:11em;
+      max-width:10em;
+      border: 0.1em solid #f5f6fa;
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 800px) {
     img {
+      margin-top:1em;
       max-width:9em;
     }
   }
