@@ -34,7 +34,7 @@ const SecAbout = styled.div`
 
 const Title = styled.div`
 color: #f8a5c2;
-font-size: 2em;
+font-size: 1.5em;
 text-align:center;
 font-family: 'Roboto', sans-serif;
 font-weight: 700;

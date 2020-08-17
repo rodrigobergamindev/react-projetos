@@ -69,7 +69,7 @@ const SecContent = styled.div`
 `;
 
 const Title = styled.div`
-    font-size: 2em;
+    font-size: 1.5em;
     text-align:center;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
