@@ -17,7 +17,7 @@ export default function Navbar(props) {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={2000}>
+                            duration={1200}>
                                 {element.name}
                             </Link>
                        </Item> 
