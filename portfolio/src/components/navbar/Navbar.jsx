@@ -1,46 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-scroll'
+import {NavLink} from "react-router-dom";
 
 
 export default function Navbar(props) {
     const nav = props.menu
     return (
+        <Container>
         <Navigation>
+
             {
                nav.map((element, index) => {
                    return (
                    <Item key={index}>
-                       <Link
-                            activeClass="active"
-                            to={`${element.url}`}
-                            spy={true}
-                            smooth={true}
-                            offset={-100}
-                            duration={1200}>
-                                {element.name}
-                            </Link>
+                        <NavLink to={element.url}>
+                           {element.icon}
+                        </NavLink>
                        </Item> 
                    )
                }) 
             }
         </Navigation>
+        </Container>
     )
 }
 
-const Navigation = styled.div`
-    flex:1;
+const Container = styled.div`
+    display:flex;
+    flex-direction:column;
     position: sticky;
     position: -webkit-sticky;
     top: 0; 
     background-color:#f8a5c2;
     z-index: 1;
     margin-top:0;
+    max-width:30em;
+    border: 1px solid red;
+`;
+
+const Navigation = styled.div`
     text-indent: 0;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 1.0em;
     font-size: 1.0em;
 
@@ -54,20 +57,15 @@ const Item = styled.li`
     color: #f5f6fa;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    padding: 0.5em;
     text-align:center;
-    margin-right: 1.5em;
-    border-radius:5px;
+    font-size: 1.5em;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     &:hover{
-        background: #f5f6fa;
-        color:#f8a5c2;
         transition: .5s;
         cursor: pointer;
-        box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
     }
 
     @media screen and (max-width: 500px) {
-        margin-right:0;
+        margin:0;
     }
 `;

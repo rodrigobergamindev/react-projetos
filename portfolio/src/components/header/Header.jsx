@@ -38,9 +38,8 @@ export default function Header() {
 const SecHeader = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color:#f8a5c2;
+    justify-content:center;
+    align-items:center;
     `;
 
 
@@ -80,7 +79,6 @@ const Perfil = styled.img`
     transform: scale(1.0,1.0);
     &:hover{
         transition: 1s;
-        transform: scale(1.2,1.2);
         box-shadow:0 0 15px white, 0 0 15px white;
     }
 
